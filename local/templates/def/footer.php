@@ -17,11 +17,11 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)
                 </div>
                 <div class="footer__news">
                     <div class="footer__news-title">Следите за нами</div>
-                    <a class="footer__news-item" href="https://www.behance.net/affetta" target="_blank">
+                    <a class="footer__news-item" href="<?= $GLOBALS['UF_URL_BEH'];?>" target="_blank">
                         <svg>
                             <use xlink:href="#be"></use>
                         </svg>
-                    </a><a class="footer__news-item" href="https://www.instagram.com/affetta.ru/" target="_blank">
+                    </a><a class="footer__news-item" href="<?= $GLOBALS['UF_URL_INST'];?>" target="_blank">
                         <svg>
                             <use xlink:href="#in"></use>
                         </svg>
@@ -34,13 +34,12 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)
         <div class="container">
             <div class="footer__bottom-inner"><a class="footer__logo" href="#"><img src="<?=SITE_TEMPLATE_PATH ?>/assets/images/svg/logo.svg"
                                                                                     alt=""></a>
-                <div class="footer__contacts"><a class="footer__contacts-mail" href="mailto:manager@affetta.ru">manager@affetta.ru</a>
-                    <div class="footer__contacts-all"><a class="footer__contacts-tel" href="tel:+79186663547">+7
-                            (918) 666-35-47</a><a class="footer__contacts-soc" href="https://wa.me/+79186663547">
+                <div class="footer__contacts"><a class="footer__contacts-mail" href="mailto:<?= $GLOBALS['UF_MAIL'];?>"><?= $GLOBALS['UF_MAIL'];?></a>
+                    <div class="footer__contacts-all"><a class="footer__contacts-tel" href="tel:+<?= $GLOBALS['SOC_PHONE'];?>"><?= $GLOBALS['UF_PHONE'];?></a><a class="footer__contacts-soc" href="https://wa.me/+<?= $GLOBALS['SOC_PHONE'];?>">
                             <svg>
                                 <use xlink:href="#viber"></use>
                             </svg>
-                        </a><a class="footer__contacts-soc" href="https://t.me/+79186663547">
+                        </a><a class="footer__contacts-soc" href="https://t.me/+<?= $GLOBALS['SOC_PHONE'];?>">
                             <svg>
                                 <use xlink:href="#teleg"></use>
                             </svg>

@@ -68,34 +68,13 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)
                                 <li><a href="#offer">Умеем и предлагаем</a></li>
                             </ul>
                         </div>
-                        <? $APPLICATION->IncludeComponent(
-                            "custom:form",
-                            "num.head",
-                            array(
-                                'IBLOCK_ID' => '1',
-                                'MAIL_EVENT' => 'FORM_SENDED',
-                                'ACTIVE' => 'Y',
-                                'TOKEN' => 'form001',
-                                'FORM_NAME' => 'Form 1',
-                                'PROPS' => array(
-                                    'NAME', // type - string
-                                    'EMAIL', // type - string
-                                    'PHONE', // type - string
-                                    'SELECT', // type - select
-                                    'CHECKBOX', // type - string
-                                    'DATE', // type - date
-                                    'MESSAGE,TEXT', // type - html/text
-                                    'DOCUMENT,FILE' // type - file
-                                ),
-                            )
-                        ); ?>
                         <div class="header__right">
-                            <a class="header__mob-mail" href="mailto:manager@affetta.ru">manager@affetta.ru</a>
-                            <a class="header__phone" href="tel:+79186663547">+7 (918) 666-35-47</a>
-                            <a class="header__soc" href="https://wa.me/+79186663547">
+                            <a class="header__mob-mail" href="mailto:<?= $GLOBALS['UF_MAIL'];?>"><?= $GLOBALS['UF_MAIL'];?></a>
+                            <a class="header__phone" href="tel:+<?= $GLOBALS['SOC_PHONE'];?>"><?= $GLOBALS['UF_PHONE'];?></a>
+                            <a class="header__soc" href="https://wa.me/+<?= $GLOBALS['SOC_PHONE'];?>">
                                 <svg><use xlink:href="#viber"></use></svg>
                             </a>
-                            <a class="header__soc" href="https://t.me/+79186663547">
+                            <a class="header__soc" href="https://t.me/+<?= $GLOBALS['SOC_PHONE'];?>">
                                 <svg><use xlink:href="#teleg"></use></svg>
                             </a><span class="header__btn" data-toggle="modal"
                                       data-target="#modalCall">Оставить заявку</span><!--a(href="https://t.me/+79186663547").header__btn
@@ -103,21 +82,21 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)
                         </div>
                         <div class="header__mob-list">
                             <div class="header__mob-list-title">Следите за нами</div>
-                            <a class="header__mob-list-item" href="https://www.behance.net/affetta" target="_blank">
+                            <a class="header__mob-list-item" href="<?= $GLOBALS['UF_URL_BEH'];?>" target="_blank">
                                 <svg><use xlink:href="#be"></use></svg>
-                            </a><a class="header__mob-list-item" href="https://www.instagram.com/affetta.ru/" target="_blank">
+                            </a><a class="header__mob-list-item" href="<?= $GLOBALS['UF_URL_INST'];?>" target="_blank">
                                 <svg><use xlink:href="#in"></use></svg>
                             </a>
                         </div>
                     </div>
                     <div class="header__mob-soc">
-                        <a href="https://wa.me/+79186663547">
+                        <a href="https://wa.me/+<?= $GLOBALS['SOC_PHONE'];?>">
                             <img src="<?=SITE_TEMPLATE_PATH ?>/assets/images/svg/viber.svg" alt="">
                         </a>
-                        <a href="https://t.me/+79186663547">
+                        <a href="https://t.me/+<?= $GLOBALS['SOC_PHONE'];?>">
                             <img src="<?=SITE_TEMPLATE_PATH ?>/assets/images/svg/teleg.svg" alt="">
                         </a>
-                        <a href="tel:+79186663547">
+                        <a href="tel:+<?= $GLOBALS['SOC_PHONE'];?>">
                             <img src="<?=SITE_TEMPLATE_PATH ?>/assets/images/svg/tel2.svg" alt="">
                         </a>
                     </div>

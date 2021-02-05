@@ -424,7 +424,7 @@ $APPLICATION->SetTitle("Affetta"); ?>
                                 <div class="form__cell">
                                     <button class="button button-primary" type="submit">Отправить</button>
                                     <p>
-                                        Нажимая «Отправить» вы соглашаетесь с порядком обработки <a href="#">персональных
+                                        Нажимая «Отправить» вы соглашаетесь с порядком обработки <a href="/policy.php">персональных
                                             данных</a>
                                     </p>
                                 </div>
