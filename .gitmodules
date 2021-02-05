@@ -1,0 +1,6 @@
+[submodule "local/modules/ion"]
+	path = local/modules/ion
+	url = https://github.com/amensum/bx-ion-core.git
+[submodule "bitrix/components/custom/form"]
+	path = bitrix/components/custom/form
+	url = https://github.com/amensum/bx-form-component.git
