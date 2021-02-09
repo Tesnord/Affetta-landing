@@ -65,6 +65,7 @@
                 data.append(`PHONE`, $(`#phone_<?=$arParams['TOKEN']?>`).val());
                 data.append(`MESSAGE`, $(`#message_<?=$arParams['TOKEN']?>`).val());
                 data.append(`DETAIL_URL`, `<?=$APPLICATION->GetCurDir()?>`);
+                data.append(`SUBJECT`, `<?=$arParams['FORM_NAME']?>`);
                 $.ajax({
                     method: `post`,
                     url: `<?=$APPLICATION->GetCurDir()?>`,

@@ -1,5 +1,10 @@
 <?php
 
+use Bitrix\Main\Application;
+
+include_once("amo/apiAMO.php");
+include_once("cookie.php");
+
 define("DEFAULT_TEMPLATE_PATH", '/local/templates/index');
 
 setupModules();
@@ -28,3 +33,18 @@ function setupModules(): void
     }
 }
 
+function my_OnBeforeEventSend($arFields, $arTemplate)
+{
+    $request = Application::getInstance()->getContext()->getRequest();
+    $utm = array();
+    foreach ($request as $key => $item) {
+        if (strripos($key, 'utm_') !==false) {
+            $utm[$key]=$item;
+        }
+    }
+    sendApiAmo($arFields['NAME'], $arFields['SUBJECT'], $arFields['PHONE'], $arFields['MESSAGE']['TEXT'], $arFields['PAGE'], $utm);
+}
+$eventManager = \Bitrix\Main\EventManager::getInstance();
+$eventManager->addEventHandler('main', 'OnBeforeEventSend', 'my_OnBeforeEventSend');
+
+/*manager@affetta.ru, nadezhda@affetta.ru*/

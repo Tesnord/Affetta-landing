@@ -78,11 +78,14 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
                         'MAIL_EVENT' => 'FORM_SENDED',
                         'ACTIVE' => 'Y',
                         'TOKEN' => 'form001',
-                        'FORM_NAME' => 'Form 1',
+                        'FORM_NAME' => 'Заявка на консультацию по проекту (модальная)',
                         'PROPS' => array(
                             'NAME', // type - string
+                            'SUBJECT',
                             'PHONE', // type - string
                             'MESSAGE', // type - html/text
+                            'DETAIL_URL',
+
                         ),
                     )
                 );

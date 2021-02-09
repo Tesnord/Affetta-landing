@@ -1,5 +1,5 @@
 <?
-//sendApiAmo("ivan", "sds@sdf", "333", "новая", "http://conceptico.store");	
+//sendApiAmo("ivan", "sds@sdf", "333", "новая", "http://conceptico.store");
 function sendApiAmo($name, $subject, $phone, $about, $page, $utm)
 {
     //ПРЕДОПРЕДЕЛЯЕМЫЕ ПЕРЕМЕННЫЕ
@@ -66,51 +66,19 @@ function sendApiAmo($name, $subject, $phone, $about, $page, $utm)
                                                         'value' => 'Сайт',
                                                     ),
                                             ),
-                                    ),/*
-				1 => 
-				array (
-				  'id' => '622611',
-				  'values' => 
-				  array (
-					0 => 
-					array (
-					  'value' => $utm["utm_source"],
-					),
-				  ),
-				),
-				2 => 
-				array (
-				  'id' => '622955',
-				  'values' => 
-				  array (
-					0 => 
-					array (
-					  'value' => $utm["utm_medium"],
-					),
-				  ),
-				),
-				3 => 
-				array (
-				  'id' => '622957',
-				  'values' => 
-				  array (
-					0 => 
-					array (
-					  'value' => $utm["utm_content"],
-					),
-				  ),
-				),
-				4 => 
-				array (
-				  'id' => '622961',
-				  'values' => 
-				  array (
-					0 => 
-					array (
-					  'value' => $utm["utm_campaign"],
-					),
-				  ),
-				),*/
+                                    ),
+                                1 =>
+                                    array(
+                                        'id' => '1307247',
+                                        'values' =>
+                                            array(
+                                                0 =>
+                                                    array(
+                                                        'value' => $Oproject,
+                                                        'enum' => 'TEXTAREA',
+                                                    ),
+                                            ),
+                                    ),
                             ),
                     ),
             ),
@@ -171,18 +139,6 @@ function sendApiAmo($name, $subject, $phone, $about, $page, $utm)
                                                     array(
                                                         'value' => $nameKlienta,
                                                         'enum' => 'WORK',
-                                                    ),
-                                            ),
-                                    ),
-                                2 =>
-                                    array(
-                                        'id' => '863492',
-                                        'values' =>
-                                            array(
-                                                0 =>
-                                                    array(
-                                                        'value' => $Oproject,
-                                                        'enum' => 'OTHER',
                                                     ),
                                             ),
                                     ),
