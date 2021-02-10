@@ -23,7 +23,7 @@ $this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayB
         <h2>решаем проблемы сайтов</h2>
         <div class="offer__inner">
             <? foreach ($arResult["ITEMS"] as $arItem): ?>
-            <div class="offer__item offer__item_color<?= $arItem['PROPERTIES']['COLOR']['VALUE_XML_ID']; ?>"><?= $arItem["NAME"] ?></div>
+            <div class="offer__item offer__item_color<?= $arItem['PROPERTIES']['COLOR']['VALUE_XML_ID']; ?>">#<?= $arItem["NAME"] ?></div>
             <?endforeach;?>
         </div>
     </div>

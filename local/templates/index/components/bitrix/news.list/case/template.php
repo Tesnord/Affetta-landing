@@ -26,7 +26,7 @@ $this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayB
                     <div class="col-lg-6 col-md-12 col-sm-12">
                         <div class="case__info">
                             <div class="case__top">
-                                <img src="<?= $arItem['PREVIEW_PICTURE']['SRC'] ?>" alt="">
+                                <img src="<?= $arItem['PREVIEW_PICTURE']['SRC']; ?>" alt="">
                                 <div class="case__text"><? echo $arItem["PREVIEW_TEXT"]; ?></div>
                             </div>
                             <div class="case__progress">
