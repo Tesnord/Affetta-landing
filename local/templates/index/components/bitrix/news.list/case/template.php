@@ -61,8 +61,10 @@ $this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayB
                 </div>
             </a>
         <? endforeach; ?>
+        <?if (count($arResult["ITEMS"]) > 4):?>
         <div class="case__btn">
             Показать ещё
         </div>
+        <?endif;?>
     </div>
 </div>

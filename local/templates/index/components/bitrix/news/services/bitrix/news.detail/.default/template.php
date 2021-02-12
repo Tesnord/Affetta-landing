@@ -162,7 +162,9 @@ array(
 ); ?>
     <!--Компонент предложений end-->
     <!--Компонент Кейсов-->
-<? $APPLICATION->IncludeComponent(
+<?
+$GLOBALS['servicesFilter'] = array('ID'=>$arResult['PROPERTIES']['SERVICES']['VALUE']);
+$APPLICATION->IncludeComponent(
 "bitrix:news.list",
 "case",
 array(
@@ -186,7 +188,7 @@ array(
 "DISPLAY_PREVIEW_TEXT" => "Y",
 "DISPLAY_TOP_PAGER" => "N",
 "FIELD_CODE" => array("PREVIEW_TEXT", "PREVIEW_PICTURE", "DETAIL_PICTURE", ""),
-"FILTER_NAME" => "",
+"FILTER_NAME" => "servicesFilter",
 "HIDE_LINK_WHEN_NO_DETAIL" => "N",
 "IBLOCK_ID" => "4",
 "IBLOCK_TYPE" => "-",
@@ -204,7 +206,7 @@ array(
 "PARENT_SECTION" => "",
 "PARENT_SECTION_CODE" => "",
 "PREVIEW_TRUNCATE_LEN" => "",
-"PROPERTY_CODE" => array("LINK", "TECH", "COLOR", ""),
+"PROPERTY_CODE" => array("LINK", "TECH", "COLOR", "PROGRESS"),
 "SET_BROWSER_TITLE" => "Y",
 "SET_LAST_MODIFIED" => "N",
 "SET_META_DESCRIPTION" => "Y",
@@ -218,7 +220,9 @@ array(
 "SORT_ORDER2" => "ASC",
 "STRICT_SECTION_CHECK" => "N"
 )
-); ?>
+);
+unset($GLOBALS['servicesFilter']);
+?>
     <!--Компонент Кейсов end-->
 <div class="brands" id="brands">
     <h2> Нам доверяют</h2>

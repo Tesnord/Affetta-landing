@@ -93,74 +93,76 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
     </symbol>
 </svg>
 <div class="wrapper">
-
-    <header class="header">
-        <div class="container">
-            <div class="header__inner">
-                <div class="header__toggler"><img class="close-i"
-                                                  src="<?= DEFAULT_TEMPLATE_PATH; ?>/assets/images/svg/toggler.svg"
-                                                  alt=""><img
-                            class="open-i" src="<?= DEFAULT_TEMPLATE_PATH; ?>/assets/images/svg/close.svg" alt=""></div>
-                <a class="header__logo" href="/"><img src="<?= DEFAULT_TEMPLATE_PATH; ?>/assets/images/svg/logo.svg"
-                                                      alt=""></a>
-                <div class="header__left">
-                    <? $APPLICATION->IncludeComponent(
-                        "bitrix:menu",
-                        "header_menu",
-                        array(
-                            "ALLOW_MULTI_SELECT" => "N",
-                            "CHILD_MENU_TYPE" => "left",
-                            "DELAY" => "N",
-                            "MAX_LEVEL" => "1",
-                            "MENU_CACHE_GET_VARS" => array(""),
-                            "MENU_CACHE_TIME" => "3600",
-                            "MENU_CACHE_TYPE" => "N",
-                            "MENU_CACHE_USE_GROUPS" => "Y",
-                            "ROOT_MENU_TYPE" => "header",
-                            "USE_EXT" => "N"
-                        )
-                    ); ?>
-                    <div class="header__right"><a class="header__mob-mail"
-                                                  href="mailto:<?= $GLOBALS['UF_MAIL']; ?>"><?= $GLOBALS['UF_MAIL']; ?></a><a
-                                class="header__phone"
-                                href="tel:+<?= $GLOBALS['SOC_PHONE']; ?>"><?= $GLOBALS['UF_PHONE']; ?></a><a
-                                class="header__soc" href="https://wa.me/+<?= $GLOBALS['SOC_PHONE']; ?>">
-                            <svg>
-                                <use xlink:href="#viber"></use>
-                            </svg>
-                        </a><a class="header__soc" href="<?= $GLOBALS['UF_TG']; ?>">
-                            <svg>
-                                <use xlink:href="#teleg"></use>
-                            </svg>
-                        </a><span class="header__btn" data-toggle="modal"
-                                  data-target="#modalCall">Оставить заявку</span><!--a(href="https://t.me/+79186663547").header__btn
-<svg><use xlink:href="#like"></use></svg><span>Избранное--></span>
+    <div class="bg"></div>
+    <div class="screen">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__toggler"><img class="close-i"
+                                                      src="<?= DEFAULT_TEMPLATE_PATH; ?>/assets/images/svg/toggler.svg"
+                                                      alt=""><img
+                                class="open-i" src="<?= DEFAULT_TEMPLATE_PATH; ?>/assets/images/svg/close.svg" alt="">
                     </div>
-                    <div class="header__mob-list">
-                        <div class="header__mob-list-title">Следите за нами</div>
-                        <a class="header__mob-list-item" href="<?= $GLOBALS['UF_URL_BEH']; ?>" target="_blank">
-                            <svg>
-                                <use xlink:href="#be"></use>
-                            </svg>
-                        </a><a class="header__mob-list-item" href="<?= $GLOBALS['UF_INSTAGRAM']; ?>"
-                               target="_blank">
-                            <svg>
-                                <use xlink:href="#in"></use>
-                            </svg>
+                    <a class="header__logo" href="/"><img src="<?= DEFAULT_TEMPLATE_PATH; ?>/assets/images/svg/logo.svg"
+                                                          alt=""></a>
+                    <div class="header__left">
+                        <? $APPLICATION->IncludeComponent(
+                            "bitrix:menu",
+                            "header_menu",
+                            array(
+                                "ALLOW_MULTI_SELECT" => "N",
+                                "CHILD_MENU_TYPE" => "left",
+                                "DELAY" => "N",
+                                "MAX_LEVEL" => "1",
+                                "MENU_CACHE_GET_VARS" => array(""),
+                                "MENU_CACHE_TIME" => "3600",
+                                "MENU_CACHE_TYPE" => "N",
+                                "MENU_CACHE_USE_GROUPS" => "Y",
+                                "ROOT_MENU_TYPE" => "header",
+                                "USE_EXT" => "N"
+                            )
+                        ); ?>
+                        <div class="header__right"><a class="header__mob-mail"
+                                                      href="mailto:<?= $GLOBALS['UF_MAIL']; ?>"><?= $GLOBALS['UF_MAIL']; ?></a><a
+                                    class="header__phone"
+                                    href="tel:+<?= $GLOBALS['SOC_PHONE']; ?>"><?= $GLOBALS['UF_PHONE']; ?></a><a
+                                    class="header__soc" href="https://wa.me/+<?= $GLOBALS['SOC_PHONE']; ?>">
+                                <svg>
+                                    <use xlink:href="#viber"></use>
+                                </svg>
+                            </a><a class="header__soc" href="<?= $GLOBALS['UF_TG']; ?>">
+                                <svg>
+                                    <use xlink:href="#teleg"></use>
+                                </svg>
+                            </a><span class="header__btn" data-toggle="modal"
+                                      data-target="#modalCall">Оставить заявку</span><!--a(href="https://t.me/+79186663547").header__btn
+<svg><use xlink:href="#like"></use></svg><span>Избранное--></span>
+                        </div>
+                        <div class="header__mob-list">
+                            <div class="header__mob-list-title">Следите за нами</div>
+                            <a class="header__mob-list-item" href="<?= $GLOBALS['UF_URL_BEH']; ?>" target="_blank">
+                                <svg>
+                                    <use xlink:href="#be"></use>
+                                </svg>
+                            </a><a class="header__mob-list-item" href="<?= $GLOBALS['UF_INSTAGRAM']; ?>"
+                                   target="_blank">
+                                <svg>
+                                    <use xlink:href="#in"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header__mob-soc">
+                        <a href="https://wa.me/+<?= $GLOBALS['SOC_PHONE']; ?>">
+                            <img src="<?= DEFAULT_TEMPLATE_PATH; ?>/assets/images/svg/viber.svg" alt="">
+                        </a>
+                        <a href="<?= $GLOBALS['UF_TG_2']; ?>">
+                            <img src="<?= DEFAULT_TEMPLATE_PATH; ?>/assets/images/svg/teleg.svg" alt="">
+                        </a>
+                        <a href="<?= $GLOBALS['UF_TG']; ?>">
+                            <img src="<?= DEFAULT_TEMPLATE_PATH; ?>/assets/images/svg/tel2.svg" alt="">
                         </a>
                     </div>
                 </div>
-                <div class="header__mob-soc">
-                    <a href="https://wa.me/+<?= $GLOBALS['SOC_PHONE']; ?>">
-                        <img src="<?= DEFAULT_TEMPLATE_PATH; ?>/assets/images/svg/viber.svg" alt="">
-                    </a>
-                    <a href="<?= $GLOBALS['UF_TG_2']; ?>">
-                        <img src="<?= DEFAULT_TEMPLATE_PATH; ?>/assets/images/svg/teleg.svg" alt="">
-                    </a>
-                    <a href="<?= $GLOBALS['UF_TG']; ?>">
-                        <img src="<?= DEFAULT_TEMPLATE_PATH; ?>/assets/images/svg/tel2.svg" alt="">
-                    </a>
-                </div>
             </div>
-        </div>
-    </header>
+        </header>

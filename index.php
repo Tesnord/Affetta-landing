@@ -5,152 +5,7 @@ $APPLICATION->SetPageProperty('description', 'Наша компания зани
 $APPLICATION->SetPageProperty('og:image', '//affetta.ru/assets/images/og.jpg');
 $APPLICATION->SetPageProperty('og:title', 'Сильные brand&digital решения для бизнеса. Клиентский сервис. Инициатива.');
 ?>
-<?$APPLICATION->IncludeComponent(
-	"bitrix:news", 
-	"services", 
-	array(
-		"DISPLAY_DATE" => "Y",
-		"DISPLAY_PICTURE" => "Y",
-		"DISPLAY_PREVIEW_TEXT" => "Y",
-		"SEF_MODE" => "Y",
-		"AJAX_MODE" => "N",
-		"IBLOCK_TYPE" => "awards",
-		"IBLOCK_ID" => "8",
-		"NEWS_COUNT" => "20",
-		"USE_SEARCH" => "Y",
-		"USE_RSS" => "Y",
-		"USE_RATING" => "Y",
-		"USE_CATEGORIES" => "Y",
-		"USE_REVIEW" => "Y",
-		"USE_FILTER" => "Y",
-		"SORT_BY1" => "ACTIVE_FROM",
-		"SORT_ORDER1" => "DESC",
-		"SORT_BY2" => "SORT",
-		"SORT_ORDER2" => "ASC",
-		"CHECK_DATES" => "Y",
-		"PREVIEW_TRUNCATE_LEN" => "",
-		"LIST_ACTIVE_DATE_FORMAT" => "d.m.Y",
-		"LIST_FIELD_CODE" => array(
-			0 => "",
-			1 => "",
-		),
-		"LIST_PROPERTY_CODE" => array(
-			0 => "",
-			1 => "",
-		),
-		"HIDE_LINK_WHEN_NO_DETAIL" => "Y",
-		"DISPLAY_NAME" => "Y",
-		"META_KEYWORDS" => "-",
-		"META_DESCRIPTION" => "-",
-		"BROWSER_TITLE" => "-",
-		"DETAIL_SET_CANONICAL_URL" => "Y",
-		"DETAIL_ACTIVE_DATE_FORMAT" => "d.m.Y",
-		"DETAIL_FIELD_CODE" => array(
-			0 => "NAME",
-			1 => "PREVIEW_TEXT",
-			2 => "DETAIL_PICTURE",
-			3 => "",
-		),
-		"DETAIL_PROPERTY_CODE" => array(
-			0 => "IMG",
-			1 => "",
-		),
-		"DETAIL_DISPLAY_TOP_PAGER" => "Y",
-		"DETAIL_DISPLAY_BOTTOM_PAGER" => "Y",
-		"DETAIL_PAGER_TITLE" => "Страница",
-		"DETAIL_PAGER_TEMPLATE" => "",
-		"DETAIL_PAGER_SHOW_ALL" => "Y",
-		"STRICT_SECTION_CHECK" => "Y",
-		"SET_TITLE" => "N",
-		"ADD_SECTIONS_CHAIN" => "N",
-		"ADD_ELEMENT_CHAIN" => "N",
-		"SET_LAST_MODIFIED" => "Y",
-		"PAGER_BASE_LINK_ENABLE" => "Y",
-		"SET_STATUS_404" => "Y",
-		"SHOW_404" => "Y",
-		"MESSAGE_404" => "",
-		"PAGER_BASE_LINK" => "",
-		"PAGER_PARAMS_NAME" => "arrPager",
-		"INCLUDE_IBLOCK_INTO_CHAIN" => "N",
-		"USE_PERMISSIONS" => "Y",
-		"GROUP_PERMISSIONS" => array(
-			0 => "1",
-		),
-		"CACHE_TYPE" => "A",
-		"CACHE_TIME" => "3600",
-		"CACHE_FILTER" => "Y",
-		"CACHE_GROUPS" => "Y",
-		"DISPLAY_TOP_PAGER" => "Y",
-		"DISPLAY_BOTTOM_PAGER" => "Y",
-		"PAGER_TITLE" => "Новости",
-		"PAGER_SHOW_ALWAYS" => "Y",
-		"PAGER_TEMPLATE" => "",
-		"PAGER_DESC_NUMBERING" => "N",
-		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
-		"PAGER_SHOW_ALL" => "Y",
-		"FILTER_NAME" => "",
-		"FILTER_FIELD_CODE" => array(
-			0 => "NAME",
-			1 => "",
-		),
-		"FILTER_PROPERTY_CODE" => array(
-			0 => "IMG",
-			1 => "",
-		),
-		"NUM_NEWS" => "20",
-		"NUM_DAYS" => "30",
-		"YANDEX" => "Y",
-		"MAX_VOTE" => "5",
-		"VOTE_NAMES" => array(
-			0 => "0",
-			1 => "1",
-			2 => "2",
-			3 => "3",
-			4 => "4",
-			5 => "",
-		),
-		"CATEGORY_IBLOCK" => array(
-		),
-		"CATEGORY_CODE" => "CATEGORY",
-		"CATEGORY_ITEMS_COUNT" => "5",
-		"MESSAGES_PER_PAGE" => "10",
-		"USE_CAPTCHA" => "Y",
-		"REVIEW_AJAX_POST" => "Y",
-		"PATH_TO_SMILE" => "/bitrix/images/forum/smile/",
-		"FORUM_ID" => "1",
-		"URL_TEMPLATES_READ" => "",
-		"SHOW_LINK_TO_FORUM" => "Y",
-		"POST_FIRST_MESSAGE" => "Y",
-		"SEF_FOLDER" => "/",
-		"AJAX_OPTION_JUMP" => "N",
-		"AJAX_OPTION_STYLE" => "Y",
-		"AJAX_OPTION_HISTORY" => "N",
-		"USE_SHARE" => "Y",
-		"SHARE_HIDE" => "Y",
-		"SHARE_TEMPLATE" => "",
-		"SHARE_HANDLERS" => array(
-			0 => "facebook",
-			1 => "twitter",
-			2 => "delicious",
-			3 => "lj",
-		),
-		"SHARE_SHORTEN_URL_LOGIN" => "",
-		"SHARE_SHORTEN_URL_KEY" => "",
-		"COMPONENT_TEMPLATE" => "services",
-		"AJAX_OPTION_ADDITIONAL" => "",
-		"DISPLAY_AS_RATING" => "rating",
-		"FILE_404" => "",
-		"SEF_URL_TEMPLATES" => array(
-			"news" => "services/",
-			"section" => "",
-			"detail" => "services/#ELEMENT_CODE#/",
-			"search" => "search/",
-			"rss" => "rss/",
-			"rss_section" => "#SECTION_ID#/rss/",
-		)
-	),
-	false
-);?>
+
     <!--Банер-->
     <div class="banner">
         <div class="container">
@@ -290,10 +145,10 @@ $APPLICATION->SetPageProperty('og:title', 'Сильные brand&digital реше
         "SORT_ORDER2" => "ASC",
         "STRICT_SECTION_CHECK" => "N"
     )
-); ?>
-    <!--Компонент предложений end-->
+);?>
+    <!--Компонент предложений end -->
     <!--Компонент Кейсов-->
-<? $APPLICATION->IncludeComponent(
+ <? $APPLICATION->IncludeComponent(
     "bitrix:news.list",
     "case",
     array(
@@ -354,44 +209,81 @@ $APPLICATION->SetPageProperty('og:title', 'Сильные brand&digital реше
     <div class="brands" id="brands">
         <h2> Нам доверяют</h2>
         <div class="brands__inner">
-            <div class="brands__paroller mega"><img src="<?=  DEFAULT_TEMPLATE_PATH;  ?>/assets/images/brands.png" alt=""></div>
+            <div class="brands__paroller mega"><img src="<?= DEFAULT_TEMPLATE_PATH; ?>/assets/images/brands.png" alt="">
+            </div>
             <div class="brands__inner-mob">
-                <div class="brands__inner-mob-item"><img src="<?=  DEFAULT_TEMPLATE_PATH;  ?>/assets/images/brand-mob1.jpg" alt=""></div>
-                <div class="brands__inner-mob-item"><img src="<?=  DEFAULT_TEMPLATE_PATH;  ?>/assets/images/brand-mob2.jpg" alt=""></div>
-                <div class="brands__inner-mob-item"><img src="<?=  DEFAULT_TEMPLATE_PATH;  ?>/assets/images/brand-mob3.jpg" alt=""></div>
-                <div class="brands__inner-mob-item"><img src="<?=  DEFAULT_TEMPLATE_PATH;  ?>/assets/images/brand-mob4.jpg" alt=""></div>
-                <div class="brands__inner-mob-item"><img src="<?=  DEFAULT_TEMPLATE_PATH;  ?>/assets/images/brand-mob5.jpg" alt=""></div>
-                <div class="brands__inner-mob-item"><img src="<?=  DEFAULT_TEMPLATE_PATH;  ?>/assets/images/brand-mob6.jpg" alt=""></div>
-                <div class="brands__inner-mob-item"><img src="<?=  DEFAULT_TEMPLATE_PATH;  ?>/assets/images/brand-mob7.jpg" alt=""></div>
-                <div class="brands__inner-mob-item"><img src="<?=  DEFAULT_TEMPLATE_PATH;  ?>/assets/images/brand-mob8.jpg" alt=""></div>
-                <div class="brands__inner-mob-item"><img src="<?=  DEFAULT_TEMPLATE_PATH;  ?>/assets/images/brand-mob9.jpg" alt=""></div>
-                <div class="brands__inner-mob-item"><img src="<?=  DEFAULT_TEMPLATE_PATH;  ?>/assets/images/brand-mob10.jpg" alt=""></div>
-                <div class="brands__inner-mob-item"><img src="<?=  DEFAULT_TEMPLATE_PATH;  ?>/assets/images/brand-mob11.jpg" alt=""></div>
-                <div class="brands__inner-mob-item"><img src="<?=  DEFAULT_TEMPLATE_PATH;  ?>/assets/images/brand-mob12.jpg" alt=""></div>
-                <div class="brands__inner-mob-item"><img src="<?=  DEFAULT_TEMPLATE_PATH;  ?>/assets/images/brand-mob13.jpg" alt=""></div>
-                <div class="brands__inner-mob-item"><img src="<?=  DEFAULT_TEMPLATE_PATH;  ?>/assets/images/brand-mob14.jpg" alt=""></div>
-                <div class="brands__inner-mob-item"><img src="<?=  DEFAULT_TEMPLATE_PATH;  ?>/assets/images/brand-mob15.jpg" alt=""></div>
-                <div class="brands__inner-mob-item"><img src="<?=  DEFAULT_TEMPLATE_PATH;  ?>/assets/images/brand-mob16.jpg" alt=""></div>
-                <div class="brands__inner-mob-item"><img src="<?=  DEFAULT_TEMPLATE_PATH;  ?>/assets/images/brand-mob17.jpg" alt=""></div>
-                <div class="brands__inner-mob-item"><img src="<?=  DEFAULT_TEMPLATE_PATH;  ?>/assets/images/brand-mob18.jpg" alt=""></div>
-                <div class="brands__inner-mob-item"><img src="<?=  DEFAULT_TEMPLATE_PATH;  ?>/assets/images/brand-mob19.jpg" alt=""></div>
-                <div class="brands__inner-mob-item"><img src="<?=  DEFAULT_TEMPLATE_PATH;  ?>/assets/images/brand-mob20.jpg" alt=""></div>
-                <div class="brands__inner-mob-item"><img src="<?=  DEFAULT_TEMPLATE_PATH;  ?>/assets/images/brand-mob21.jpg" alt=""></div>
-                <div class="brands__inner-mob-item"><img src="<?=  DEFAULT_TEMPLATE_PATH;  ?>/assets/images/brand-mob22.jpg" alt=""></div>
-                <div class="brands__inner-mob-item"><img src="<?=  DEFAULT_TEMPLATE_PATH;  ?>/assets/images/brand-mob23.jpg" alt=""></div>
-                <div class="brands__inner-mob-item"><img src="<?=  DEFAULT_TEMPLATE_PATH;  ?>/assets/images/brand-mob24.jpg" alt=""></div>
-                <div class="brands__inner-mob-item"><img src="<?=  DEFAULT_TEMPLATE_PATH;  ?>/assets/images/brand-mob25.jpg" alt=""></div>
-                <div class="brands__inner-mob-item"><img src="<?=  DEFAULT_TEMPLATE_PATH;  ?>/assets/images/brand-mob26.jpg" alt=""></div>
-                <div class="brands__inner-mob-item"><img src="<?=  DEFAULT_TEMPLATE_PATH;  ?>/assets/images/brand-mob27.jpg" alt=""></div>
-                <div class="brands__inner-mob-item"><img src="<?=  DEFAULT_TEMPLATE_PATH;  ?>/assets/images/brand-mob28.jpg" alt=""></div>
-                <div class="brands__inner-mob-item"><img src="<?=  DEFAULT_TEMPLATE_PATH;  ?>/assets/images/brand-mob29.jpg" alt=""></div>
-                <div class="brands__inner-mob-item"><img src="<?=  DEFAULT_TEMPLATE_PATH;  ?>/assets/images/brand-mob30.jpg" alt=""></div>
-                <div class="brands__inner-mob-item"><img src="<?=  DEFAULT_TEMPLATE_PATH;  ?>/assets/images/brand-mob31.jpg" alt=""></div>
-                <div class="brands__inner-mob-item"><img src="<?=  DEFAULT_TEMPLATE_PATH;  ?>/assets/images/brand-mob32.jpg" alt=""></div>
-                <div class="brands__inner-mob-item"><img src="<?=  DEFAULT_TEMPLATE_PATH;  ?>/assets/images/brand-mob33.jpg" alt=""></div>
-                <div class="brands__inner-mob-item"><img src="<?=  DEFAULT_TEMPLATE_PATH;  ?>/assets/images/brand-mob34.jpg" alt=""></div>
-                <div class="brands__inner-mob-item"><img src="<?=  DEFAULT_TEMPLATE_PATH;  ?>/assets/images/brand-mob35.jpg" alt=""></div>
-                <div class="brands__inner-mob-item"><img src="<?=  DEFAULT_TEMPLATE_PATH;  ?>/assets/images/brand-mob36.jpg" alt=""></div>
+                <div class="brands__inner-mob-item"><img
+                            src="<?= DEFAULT_TEMPLATE_PATH; ?>/assets/images/brand-mob1.jpg" alt=""></div>
+                <div class="brands__inner-mob-item"><img
+                            src="<?= DEFAULT_TEMPLATE_PATH; ?>/assets/images/brand-mob2.jpg" alt=""></div>
+                <div class="brands__inner-mob-item"><img
+                            src="<?= DEFAULT_TEMPLATE_PATH; ?>/assets/images/brand-mob3.jpg" alt=""></div>
+                <div class="brands__inner-mob-item"><img
+                            src="<?= DEFAULT_TEMPLATE_PATH; ?>/assets/images/brand-mob4.jpg" alt=""></div>
+                <div class="brands__inner-mob-item"><img
+                            src="<?= DEFAULT_TEMPLATE_PATH; ?>/assets/images/brand-mob5.jpg" alt=""></div>
+                <div class="brands__inner-mob-item"><img
+                            src="<?= DEFAULT_TEMPLATE_PATH; ?>/assets/images/brand-mob6.jpg" alt=""></div>
+                <div class="brands__inner-mob-item"><img
+                            src="<?= DEFAULT_TEMPLATE_PATH; ?>/assets/images/brand-mob7.jpg" alt=""></div>
+                <div class="brands__inner-mob-item"><img
+                            src="<?= DEFAULT_TEMPLATE_PATH; ?>/assets/images/brand-mob8.jpg" alt=""></div>
+                <div class="brands__inner-mob-item"><img
+                            src="<?= DEFAULT_TEMPLATE_PATH; ?>/assets/images/brand-mob9.jpg" alt=""></div>
+                <div class="brands__inner-mob-item"><img
+                            src="<?= DEFAULT_TEMPLATE_PATH; ?>/assets/images/brand-mob10.jpg" alt=""></div>
+                <div class="brands__inner-mob-item"><img
+                            src="<?= DEFAULT_TEMPLATE_PATH; ?>/assets/images/brand-mob11.jpg" alt=""></div>
+                <div class="brands__inner-mob-item"><img
+                            src="<?= DEFAULT_TEMPLATE_PATH; ?>/assets/images/brand-mob12.jpg" alt=""></div>
+                <div class="brands__inner-mob-item"><img
+                            src="<?= DEFAULT_TEMPLATE_PATH; ?>/assets/images/brand-mob13.jpg" alt=""></div>
+                <div class="brands__inner-mob-item"><img
+                            src="<?= DEFAULT_TEMPLATE_PATH; ?>/assets/images/brand-mob14.jpg" alt=""></div>
+                <div class="brands__inner-mob-item"><img
+                            src="<?= DEFAULT_TEMPLATE_PATH; ?>/assets/images/brand-mob15.jpg" alt=""></div>
+                <div class="brands__inner-mob-item"><img
+                            src="<?= DEFAULT_TEMPLATE_PATH; ?>/assets/images/brand-mob16.jpg" alt=""></div>
+                <div class="brands__inner-mob-item"><img
+                            src="<?= DEFAULT_TEMPLATE_PATH; ?>/assets/images/brand-mob17.jpg" alt=""></div>
+                <div class="brands__inner-mob-item"><img
+                            src="<?= DEFAULT_TEMPLATE_PATH; ?>/assets/images/brand-mob18.jpg" alt=""></div>
+                <div class="brands__inner-mob-item"><img
+                            src="<?= DEFAULT_TEMPLATE_PATH; ?>/assets/images/brand-mob19.jpg" alt=""></div>
+                <div class="brands__inner-mob-item"><img
+                            src="<?= DEFAULT_TEMPLATE_PATH; ?>/assets/images/brand-mob20.jpg" alt=""></div>
+                <div class="brands__inner-mob-item"><img
+                            src="<?= DEFAULT_TEMPLATE_PATH; ?>/assets/images/brand-mob21.jpg" alt=""></div>
+                <div class="brands__inner-mob-item"><img
+                            src="<?= DEFAULT_TEMPLATE_PATH; ?>/assets/images/brand-mob22.jpg" alt=""></div>
+                <div class="brands__inner-mob-item"><img
+                            src="<?= DEFAULT_TEMPLATE_PATH; ?>/assets/images/brand-mob23.jpg" alt=""></div>
+                <div class="brands__inner-mob-item"><img
+                            src="<?= DEFAULT_TEMPLATE_PATH; ?>/assets/images/brand-mob24.jpg" alt=""></div>
+                <div class="brands__inner-mob-item"><img
+                            src="<?= DEFAULT_TEMPLATE_PATH; ?>/assets/images/brand-mob25.jpg" alt=""></div>
+                <div class="brands__inner-mob-item"><img
+                            src="<?= DEFAULT_TEMPLATE_PATH; ?>/assets/images/brand-mob26.jpg" alt=""></div>
+                <div class="brands__inner-mob-item"><img
+                            src="<?= DEFAULT_TEMPLATE_PATH; ?>/assets/images/brand-mob27.jpg" alt=""></div>
+                <div class="brands__inner-mob-item"><img
+                            src="<?= DEFAULT_TEMPLATE_PATH; ?>/assets/images/brand-mob28.jpg" alt=""></div>
+                <div class="brands__inner-mob-item"><img
+                            src="<?= DEFAULT_TEMPLATE_PATH; ?>/assets/images/brand-mob29.jpg" alt=""></div>
+                <div class="brands__inner-mob-item"><img
+                            src="<?= DEFAULT_TEMPLATE_PATH; ?>/assets/images/brand-mob30.jpg" alt=""></div>
+                <div class="brands__inner-mob-item"><img
+                            src="<?= DEFAULT_TEMPLATE_PATH; ?>/assets/images/brand-mob31.jpg" alt=""></div>
+                <div class="brands__inner-mob-item"><img
+                            src="<?= DEFAULT_TEMPLATE_PATH; ?>/assets/images/brand-mob32.jpg" alt=""></div>
+                <div class="brands__inner-mob-item"><img
+                            src="<?= DEFAULT_TEMPLATE_PATH; ?>/assets/images/brand-mob33.jpg" alt=""></div>
+                <div class="brands__inner-mob-item"><img
+                            src="<?= DEFAULT_TEMPLATE_PATH; ?>/assets/images/brand-mob34.jpg" alt=""></div>
+                <div class="brands__inner-mob-item"><img
+                            src="<?= DEFAULT_TEMPLATE_PATH; ?>/assets/images/brand-mob35.jpg" alt=""></div>
+                <div class="brands__inner-mob-item"><img
+                            src="<?= DEFAULT_TEMPLATE_PATH; ?>/assets/images/brand-mob36.jpg" alt=""></div>
             </div>
         </div>
         <div class="brands__btn"><span>Показать ещё</span></div>
@@ -488,27 +380,30 @@ $APPLICATION->SetPageProperty('og:title', 'Сильные brand&digital реше
             'MESSAGE,TEXT', // type - html/text
         ),
     )
-); */?>
+); */ ?>
     <div class="person">
         <div class="container">
             <div class="person__inner">
-                <div class="person__img"><img class="img-fluid" src="<?=  DEFAULT_TEMPLATE_PATH;  ?>/assets/images/person.png" alt=""></div>
+                <div class="person__img"><img class="img-fluid"
+                                              src="<?= DEFAULT_TEMPLATE_PATH; ?>/assets/images/person.png" alt=""></div>
                 <div class="person__text">
                     <div class="person__title"></div>
                     <div class="person__title">Ибрагим — основатель компании</div>
                     <div class="person__item">
                         <div class="person__item-title">Для обсуждения проекта звоните</div>
-                        <a class="person__item-link phone_ym" href="tel:+<?= $GLOBALS['SOC_PHONE'];?>"><?= $GLOBALS['UF_PHONE'];?></a>
+                        <a class="person__item-link phone_ym"
+                           href="tel:+<?= $GLOBALS['SOC_PHONE']; ?>"><?= $GLOBALS['UF_PHONE']; ?></a>
                     </div>
                     <div class="person__item">
                         <div class="person__item-title">или пишите, везде ответим :)</div>
-                        <a class="person__item-link person__item-link-soc wp_ym" href="https://wa.me/+<?= $GLOBALS['SOC_PHONE'];?>">
+                        <a class="person__item-link person__item-link-soc wp_ym"
+                           href="https://wa.me/+<?= $GLOBALS['SOC_PHONE']; ?>">
                             Ватсап
                             <svg>
                                 <use xlink:href="#viber"></use>
                             </svg>
                         </a><a class="person__item-link person__item-link-soc tg_ym"
-                               href="<?= $GLOBALS['UF_TG'];?>">
+                               href="<?= $GLOBALS['UF_TG']; ?>">
                             Телеграм
                             <svg>
                                 <use xlink:href="#teleg"></use>
@@ -517,13 +412,13 @@ $APPLICATION->SetPageProperty('og:title', 'Сильные brand&digital реше
                     </div>
                     <div class="person__item">
                         <div class="person__item-title">
-                            <?= $GLOBALS['UF_COMPANY'];?>
+                            <?= $GLOBALS['UF_COMPANY']; ?>
                         </div>
                         <div class="person__item-title">
-                            ИНН:<?= $GLOBALS['UF_INN'];?>
+                            ИНН:<?= $GLOBALS['UF_INN']; ?>
                         </div>
                         <div class="person__item-title">
-                            <?= $GLOBALS['UF_ADDRESS'];?>
+                            <?= $GLOBALS['UF_ADDRESS']; ?>
                         </div>
                     </div>
                     <div class="person__bottom">
@@ -531,7 +426,8 @@ $APPLICATION->SetPageProperty('og:title', 'Сильные brand&digital реше
                                 class="button button-primary" onclick="Marquiz.showModal('5f367f1d51d1330052bbad60')">
                             <span>Рассчитать стоимость сайта</span></button>
                         <a
-                                class="person__bottom-mail" href="mailto:<?= $GLOBALS['UF_MAIL'];?>"><?= $GLOBALS['UF_MAIL'];?></a>
+                                class="person__bottom-mail"
+                                href="mailto:<?= $GLOBALS['UF_MAIL']; ?>"><?= $GLOBALS['UF_MAIL']; ?></a>
                     </div>
                 </div>
             </div>
