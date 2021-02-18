@@ -31,7 +31,7 @@
                         <div class="form__cell">
                             <button class="button button-primary" type="submit" id="button_<?= $arParams['TOKEN'] ?>">
                                 <span>Отправить</span></button>
-                            <p>Нажимая «Отправить» вы соглашаетесь с порядком обработки <a href="/politika/index.php">персональных данных</a></p>
+                            <p>Нажимая «Отправить» вы соглашаетесь с порядком обработки <a href="/policy/index.php">персональных данных</a></p>
                         </div>
                     </div>
                 </form>

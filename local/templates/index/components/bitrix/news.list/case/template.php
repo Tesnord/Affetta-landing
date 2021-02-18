@@ -17,7 +17,6 @@ $this->setFrameMode(true);
 $this->AddEditAction($arItem['ID'], $arItem['EDIT_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_EDIT"));
 $this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_DELETE"), array("CONFIRM" => GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM')));
 ?>
-<div class="case" id="case">
     <div class="container">
         <? foreach ($arResult["ITEMS"] as $i => $arItem): ?>
             <a class="case__item case__item-color<?= $arItem['PROPERTIES']['COLOR']['VALUE_XML_ID']; ?>"
@@ -67,4 +66,3 @@ $this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayB
         </div>
         <?endif;?>
     </div>
-</div>

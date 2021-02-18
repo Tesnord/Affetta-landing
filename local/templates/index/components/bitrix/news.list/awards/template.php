@@ -12,13 +12,10 @@
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);
 //echo ' <pre>';print_r($arResult['ITEMS']['0']);echo '</pre>';
-?>
-<?
 $this->AddEditAction($arItem['ID'], $arItem['EDIT_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_EDIT"));
 $this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_DELETE"), array("CONFIRM" => GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM')));
 ?>
-<div class="awards" >
-    <div class="container">
+
         <div class="row">
             <? foreach ($arResult["ITEMS"] as $arItem): ?>
                 <div class="col-xl-2 col-lg-4 col-md-4 col-sm-4">
@@ -30,5 +27,3 @@ $this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayB
                 </div>
             <? endforeach; ?>
         </div>
-    </div>
-</div>

@@ -1,4 +1,7 @@
 <? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
+/**
+ * @var $APPLICATION
+ */
 $APPLICATION->SetPageProperty("keywords", "разработка сайтов, разработка интернет-магазинов");
 $APPLICATION->SetTitle("Дизайн Студия Affetta.ru - разработка сайтов");
 $APPLICATION->SetPageProperty('description', 'Наша компания занимается разработкой сайтов более 10 лет, работаем на достижение результата.');
@@ -58,4 +61,5 @@ $APPLICATION->SetPageProperty('og:title', 'Сильные brand&digital реше
             </div>
         </div>
     </div>
+</div>
     <? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>

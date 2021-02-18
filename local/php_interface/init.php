@@ -8,7 +8,7 @@ include_once("cookie.php");
 define("DEFAULT_TEMPLATE_PATH", '/local/templates/index');
 
 setupModules();
-$UF_PHONE = Ion\Settings::getSpaceField("UF_PHONE", "INFO");
+$UF_PHONE = Ion\Settings::getSpaceField("UF_PHONE_NEW", "INFO");
 $UF_MAIL = Ion\Settings::getSpaceField("UF_MAIL", "INFO");
 $UF_URL_BEH = Ion\Settings::getSpaceField("UF_URL_BEH", "INFO");
 $UF_INSTAGRAM = Ion\Settings::getSpaceField("UF_URL_INST", "INFO");
@@ -46,5 +46,3 @@ function my_OnBeforeEventSend($arFields, $arTemplate)
 }
 $eventManager = \Bitrix\Main\EventManager::getInstance();
 $eventManager->addEventHandler('main', 'OnBeforeEventSend', 'my_OnBeforeEventSend');
-
-/*manager@affetta.ru, nadezhda@affetta.ru*/
