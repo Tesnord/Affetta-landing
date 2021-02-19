@@ -16,24 +16,23 @@ $aMenuLinks = Array(
 	),
 	Array(
 		"Технологии", 
-		"#technology",
+		"#technology", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
 		"Умеем и предлагаем", 
-		"#offer",
+		"#offer", 
 		Array(), 
 		Array(), 
 		"" 
 	),
-	Array(
-		"Политика конфиденциальности", 
-		"/policy/",
-		Array(), 
-		Array(), 
-		"" 
-	)
+    Array(
+        "Политика конфиденциальности",
+        "/policy/",
+        Array(),
+        Array(),
+        ""
+    )
 );
-?>
