@@ -419,7 +419,7 @@ $APPLICATION->SetPageProperty('og:title', 'Сильные brand&digital реше
                     <div class="person__item">
                         <div class="person__item-title">Для обсуждения проекта звоните</div>
                         <a class="person__item-link phone_ym"
-                           href="tel:+<?= $GLOBALS['SOC_PHONE']; ?>"><?= $GLOBALS['UF_PHONE']; ?></a>
+                           href="tel:+<?= $GLOBALS['SOC_PHONE']; ?>"><?= $GLOBALS['ION_PHONE']; ?></a>
                     </div>
                     <div class="person__item">
                         <div class="person__item-title">или пишите, везде ответим :)</div>
@@ -430,7 +430,7 @@ $APPLICATION->SetPageProperty('og:title', 'Сильные brand&digital реше
                                 <use xlink:href="#viber"></use>
                             </svg>
                         </a><a class="person__item-link person__item-link-soc tg_ym"
-                               href="<?= $GLOBALS['UF_TG']; ?>">
+                               href="<?= $GLOBALS['ION_TG']; ?>">
                             Телеграм
                             <svg>
                                 <use xlink:href="#teleg"></use>
@@ -439,13 +439,13 @@ $APPLICATION->SetPageProperty('og:title', 'Сильные brand&digital реше
                     </div>
                     <div class="person__item">
                         <div class="person__item-title">
-                            <?= $GLOBALS['UF_COMPANY']; ?>
+                            <?= $GLOBALS['ION_COMPANY']; ?>
                         </div>
                         <div class="person__item-title">
-                            ИНН:<?= $GLOBALS['UF_INN']; ?>
+                            ИНН:<?= $GLOBALS['ION_INN']; ?>
                         </div>
                         <div class="person__item-title">
-                            <?= $GLOBALS['UF_ADDRESS']; ?>
+                            <?= $GLOBALS['ION_ADDRESS']; ?>
                         </div>
                     </div>
                     <div class="person__bottom">
@@ -454,7 +454,7 @@ $APPLICATION->SetPageProperty('og:title', 'Сильные brand&digital реше
                             <span>Рассчитать стоимость сайта</span></button>
                         <a
                                 class="person__bottom-mail"
-                                href="mailto:<?= $GLOBALS['UF_MAIL']; ?>"><?= $GLOBALS['UF_MAIL']; ?></a>
+                                href="mailto:<?= $GLOBALS['ION_MAIL']; ?>"><?= $GLOBALS['ION_MAIL']; ?></a>
                     </div>
                 </div>
             </div>
