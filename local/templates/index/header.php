@@ -108,71 +108,98 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
                                                       alt=""><img
                                 class="open-i" src="<?= SITE_TEMPLATE_PATH; ?>/assets/images/svg/close.svg" alt="">
                     </div>
-                    <a class="header__logo" href="<?= SITE_DIR?>"><img src="<?= SITE_TEMPLATE_PATH; ?>/assets/images/svg/logo.svg"
-                                                          alt=""></a>
+                    <a class="header__logo" href="<?= SITE_DIR ?>"><img
+                                src="<?= SITE_TEMPLATE_PATH; ?>/assets/images/svg/logo.svg"
+                                alt=""></a>
                     <div class="header__left">
                         <div class="header__menu">
-                            <? $APPLICATION->IncludeComponent(
-                                "bitrix:menu",
-                                "main_menu",
-                                array(
-                                    "ALLOW_MULTI_SELECT" => "N",
-                                    "CHILD_MENU_TYPE" => "left",
-                                    "DELAY" => "N",
-                                    "MAX_LEVEL" => "1",
-                                    "MENU_CACHE_GET_VARS" => array(""),
-                                    "MENU_CACHE_TIME" => "3600",
-                                    "MENU_CACHE_TYPE" => "N",
-                                    "MENU_CACHE_USE_GROUPS" => "Y",
-                                    "ROOT_MENU_TYPE" => "main",
-                                    "USE_EXT" => "N"
-                                )
-                            ); ?>
-                        </div>
-                        <div class="header__right">
-                            <a class="header__mob-mail" href="mailto:<?= $GLOBALS['UF_MAIL']; ?>">
-                                <?= $GLOBALS['UF_MAIL']; ?>
-                            </a>
-                            <a class="header__phone" href="tel:+<?= $GLOBALS['SOC_PHONE']; ?>">
-                                <?= $GLOBALS['UF_PHONE']; ?>
-                            </a>
-                            <a class="header__soc" target="_blank" href="https://wa.me/+<?= $GLOBALS['SOC_PHONE']; ?>">
-                                <svg>
-                                    <use xlink:href="#viber"></use>
-                                </svg>
-                            </a><a class="header__soc" href="<?= $GLOBALS['UF_TG']; ?>">
-                                <svg>
-                                    <use xlink:href="#teleg"></use>
-                                </svg>
-                            </a>
-                            <span class="header__btn" data-toggle="modal" data-target="#modalCall">Оставить заявку</span><!--a(href="https://t.me/+79186663547").header__btn
+                            <!-- Меню Главной -->
+                            <? if ($APPLICATION->GetCurPage() == '/') :
+                                $APPLICATION->IncludeComponent(
+                                    "bitrix:menu",
+                                    "main_menu",
+                                    array(
+                                        "ALLOW_MULTI_SELECT" => "N",
+                                        "CHILD_MENU_TYPE" => "left",
+                                        "DELAY" => "N",
+                                        "MAX_LEVEL" => "1",
+                                        "MENU_CACHE_GET_VARS" => array(""),
+                                        "MENU_CACHE_TIME" => "3600",
+                                        "MENU_CACHE_TYPE" => "N",
+                                        "MENU_CACHE_USE_GROUPS" => "Y",
+                                        "ROOT_MENU_TYPE" => "main",
+                                        "USE_EXT" => "N"
+                                    )
+                                );
+                            endif;
+                            //Меню Политики
+                            if ($APPLICATION->GetCurPage() == '/policy/') : ?>
+                            <div class="header__menu">
+                                <? $APPLICATION->IncludeComponent(
+                                    "bitrix:menu",
+                                    "main_menu",
+                                    array(
+                                        "ALLOW_MULTI_SELECT" => "N",
+                                        "CHILD_MENU_TYPE" => "left",
+                                        "DELAY" => "N",
+                                        "MAX_LEVEL" => "1",
+                                        "MENU_CACHE_GET_VARS" => array(""),
+                                        "MENU_CACHE_TIME" => "3600",
+                                        "MENU_CACHE_TYPE" => "N",
+                                        "MENU_CACHE_USE_GROUPS" => "Y",
+                                        "ROOT_MENU_TYPE" => "policy_head",
+                                        "USE_EXT" => "N"
+                                    )
+                                );
+
+                                endif; ?>
+                            </div>
+                            <div class="header__right">
+                                <a class="header__mob-mail" href="mailto:<?= $GLOBALS['UF_MAIL']; ?>">
+                                    <?= $GLOBALS['UF_MAIL']; ?>
+                                </a>
+                                <a class="header__phone" href="tel:+<?= $GLOBALS['SOC_PHONE']; ?>">
+                                    <?= $GLOBALS['UF_PHONE']; ?>
+                                </a>
+                                <a class="header__soc" target="_blank"
+                                   href="https://wa.me/+<?= $GLOBALS['SOC_PHONE']; ?>">
+                                    <svg>
+                                        <use xlink:href="#viber"></use>
+                                    </svg>
+                                </a><a class="header__soc" href="<?= $GLOBALS['UF_TG']; ?>">
+                                    <svg>
+                                        <use xlink:href="#teleg"></use>
+                                    </svg>
+                                </a>
+                                <span class="header__btn" data-toggle="modal"
+                                      data-target="#modalCall">Оставить заявку</span><!--a(href="https://t.me/+79186663547").header__btn
 <svg><use xlink:href="#like"></use></svg><span>Избранное--></span>
+                            </div>
+                            <div class="header__mob-list">
+                                <div class="header__mob-list-title">Следите за нами</div>
+                                <a class="header__mob-list-item" href="<?= $GLOBALS['UF_URL_BEH']; ?>" target="_blank">
+                                    <svg>
+                                        <use xlink:href="#be"></use>
+                                    </svg>
+                                </a><a class="header__mob-list-item" href="<?= $GLOBALS['UF_INSTAGRAM']; ?>"
+                                       target="_blank">
+                                    <svg>
+                                        <use xlink:href="#in"></use>
+                                    </svg>
+                                </a>
+                            </div>
                         </div>
-                        <div class="header__mob-list">
-                            <div class="header__mob-list-title">Следите за нами</div>
-                            <a class="header__mob-list-item" href="<?= $GLOBALS['UF_URL_BEH']; ?>" target="_blank">
-                                <svg>
-                                    <use xlink:href="#be"></use>
-                                </svg>
-                            </a><a class="header__mob-list-item" href="<?= $GLOBALS['UF_INSTAGRAM']; ?>"
-                                   target="_blank">
-                                <svg>
-                                    <use xlink:href="#in"></use>
-                                </svg>
+                        <div class="header__mob-soc">
+                            <a target="_blank" href="https://wa.me/+<?= $GLOBALS['SOC_PHONE']; ?>">
+                                <img src="<?= SITE_TEMPLATE_PATH; ?>/assets/images/svg/viber.svg" alt="">
+                            </a>
+                            <a href="<?= $GLOBALS['UF_TG']; ?>">
+                                <img src="<?= SITE_TEMPLATE_PATH; ?>/assets/images/svg/teleg.svg" alt="">
+                            </a>
+                            <a href="tel:+<?= $GLOBALS['SOC_PHONE']; ?>">
+                                <img src="<?= SITE_TEMPLATE_PATH; ?>/assets/images/svg/tel2.svg" alt="">
                             </a>
                         </div>
-                    </div>
-                    <div class="header__mob-soc">
-                        <a target="_blank" href="https://wa.me/+<?= $GLOBALS['SOC_PHONE']; ?>">
-                            <img src="<?= SITE_TEMPLATE_PATH; ?>/assets/images/svg/viber.svg" alt="">
-                        </a>
-                        <a href="<?= $GLOBALS['UF_TG']; ?>">
-                            <img src="<?= SITE_TEMPLATE_PATH; ?>/assets/images/svg/teleg.svg" alt="">
-                        </a>
-                        <a href="tel:+<?= $GLOBALS['SOC_PHONE']; ?>">
-                            <img src="<?= SITE_TEMPLATE_PATH; ?>/assets/images/svg/tel2.svg" alt="">
-                        </a>
                     </div>
                 </div>
-            </div>
         </header>

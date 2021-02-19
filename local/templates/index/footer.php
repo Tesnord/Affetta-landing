@@ -7,22 +7,44 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
         <div class="container">
             <div class="footer__top-inner">
                 <div class="footer__menu">
-                    <? $APPLICATION->IncludeComponent(
-                        "bitrix:menu",
-                        "main_menu",
-                        array(
-                            "ALLOW_MULTI_SELECT" => "N",
-                            "CHILD_MENU_TYPE" => "left",
-                            "DELAY" => "N",
-                            "MAX_LEVEL" => "1",
-                            "MENU_CACHE_GET_VARS" => array(""),
-                            "MENU_CACHE_TIME" => "3600",
-                            "MENU_CACHE_TYPE" => "N",
-                            "MENU_CACHE_USE_GROUPS" => "Y",
-                            "ROOT_MENU_TYPE" => "footer",
-                            "USE_EXT" => "N"
-                        )
-                    ); ?>
+                    <!-- Меню Главной -->
+                    <? if ($APPLICATION->GetCurPage() == '/') :
+                        $APPLICATION->IncludeComponent(
+                            "bitrix:menu",
+                            "main_menu",
+                            array(
+                                "ALLOW_MULTI_SELECT" => "N",
+                                "CHILD_MENU_TYPE" => "left",
+                                "DELAY" => "N",
+                                "MAX_LEVEL" => "1",
+                                "MENU_CACHE_GET_VARS" => array(""),
+                                "MENU_CACHE_TIME" => "3600",
+                                "MENU_CACHE_TYPE" => "N",
+                                "MENU_CACHE_USE_GROUPS" => "Y",
+                                "ROOT_MENU_TYPE" => "footer",
+                                "USE_EXT" => "N"
+                            )
+                        );
+                    endif;
+                    //Меню Политики
+                    if ($APPLICATION->GetCurPage() == '/policy/') :
+                        $APPLICATION->IncludeComponent(
+                            "bitrix:menu",
+                            "main_menu",
+                            array(
+                                "ALLOW_MULTI_SELECT" => "N",
+                                "CHILD_MENU_TYPE" => "left",
+                                "DELAY" => "N",
+                                "MAX_LEVEL" => "1",
+                                "MENU_CACHE_GET_VARS" => array(""),
+                                "MENU_CACHE_TIME" => "3600",
+                                "MENU_CACHE_TYPE" => "N",
+                                "MENU_CACHE_USE_GROUPS" => "Y",
+                                "ROOT_MENU_TYPE" => "policy_foot",
+                                "USE_EXT" => "N"
+                            )
+                        );
+                    endif; ?>
                 </div>
                 <div class="footer__news">
                     <div class="footer__news-title">Следите за нами</div>
@@ -49,7 +71,8 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
                                                  href="mailto:<?= $GLOBALS['UF_MAIL']; ?>"><?= $GLOBALS['UF_MAIL']; ?></a>
                     <div class="footer__contacts-all"><a class="footer__contacts-tel"
                                                          href="tel:+<?= $GLOBALS['SOC_PHONE']; ?>"><?= $GLOBALS['UF_PHONE']; ?></a>
-                        <a class="footer__contacts-soc" target="_blank" href="https://wa.me/+<?= $GLOBALS['SOC_PHONE']; ?>">
+                        <a class="footer__contacts-soc" target="_blank"
+                           href="https://wa.me/+<?= $GLOBALS['SOC_PHONE']; ?>">
                             <svg>
                                 <use xlink:href="#viber"></use>
                             </svg>
