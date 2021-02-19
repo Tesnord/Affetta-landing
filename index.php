@@ -95,8 +95,9 @@ $APPLICATION->SetPageProperty('og:title', 'Сильные brand&digital реше
         <img src="<?= SITE_TEMPLATE_PATH; ?>/assets/images/svg/scroll.svg" alt="">
     </div>
     </div>
+    <div id="offer"></div>
     <!--Компонент предложений-->
-    <div class="offer" id="offer">
+    <div class="offer">
         <div class="container">
             <h2>решаем проблемы сайтов</h2>
             <? $APPLICATION->IncludeComponent(
@@ -160,7 +161,8 @@ $APPLICATION->SetPageProperty('og:title', 'Сильные brand&digital реше
     </div>
     <!--Компонент предложений end -->
     <!--Компонент Кейсов-->
-    <div class="case" id="case">
+    <div id="case"></div>
+    <div class="case">
         <? $APPLICATION->IncludeComponent(
             "bitrix:news.list",
             "case",
@@ -220,7 +222,8 @@ $APPLICATION->SetPageProperty('og:title', 'Сильные brand&digital реше
         ); ?>
     </div>
     <!--Компонент Кейсов end-->
-    <div class="brands" id="brands">
+    <div id="brands"></div>
+    <div class="brands">
         <h2> Нам доверяют</h2>
         <div class="brands__inner">
             <div class="brands__paroller mega"><img src="<?= SITE_TEMPLATE_PATH; ?>/assets/images/brands.png" alt="">
@@ -308,7 +311,8 @@ $APPLICATION->SetPageProperty('og:title', 'Сильные brand&digital реше
         </div>
     </div>
     <!--Компонент Технологий-->
-    <div class="technology" id="technology">
+    <div id="technology"></div>
+    <div class="technology">
         <div class="container">
             <h2>Технологии</h2>
             <div class="technology__inner">

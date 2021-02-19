@@ -27,7 +27,7 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
                         );
                     endif;
                     //Меню Политики
-                    if ($APPLICATION->GetCurPage() == '/policy/') :
+                    if ($APPLICATION->GetCurPage() != '/') :
                         $APPLICATION->IncludeComponent(
                             "bitrix:menu",
                             "main_menu",
@@ -48,12 +48,12 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
                 </div>
                 <div class="footer__news">
                     <div class="footer__news-title">Следите за нами</div>
-                    <a class="footer__news-item" href="<?= $GLOBALS['UF_URL_BEH']; ?>" target="_blank">
+                    <a class="footer__news-item" href="<?= $GLOBALS['ION_URL_BEH']; ?>" target="_blank">
                         <svg>
                             <use xlink:href="#be"></use>
                         </svg>
                     </a>
-                    <a class="footer__news-item" href="<?= $GLOBALS['UF_INSTAGRAM']; ?>" target="_blank">
+                    <a class="footer__news-item" href="<?= $GLOBALS['ION_INSTAGRAM']; ?>" target="_blank">
                         <svg>
                             <use xlink:href="#in"></use>
                         </svg>
@@ -68,15 +68,15 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
                             src="<?= DEFAULT_TEMPLATE_PATH ?>/assets/images/svg/logo.svg"
                             alt=""></a>
                 <div class="footer__contacts"><a class="footer__contacts-mail"
-                                                 href="mailto:<?= $GLOBALS['UF_MAIL']; ?>"><?= $GLOBALS['UF_MAIL']; ?></a>
+                                                 href="mailto:<?= $GLOBALS['ION_MAIL']; ?>"><?= $GLOBALS['ION_MAIL']; ?></a>
                     <div class="footer__contacts-all"><a class="footer__contacts-tel"
-                                                         href="tel:+<?= $GLOBALS['SOC_PHONE']; ?>"><?= $GLOBALS['UF_PHONE']; ?></a>
+                                                         href="tel:+<?= $GLOBALS['SOC_PHONE']; ?>"><?= $GLOBALS['ION_PHONE']; ?></a>
                         <a class="footer__contacts-soc" target="_blank"
                            href="https://wa.me/+<?= $GLOBALS['SOC_PHONE']; ?>">
                             <svg>
                                 <use xlink:href="#viber"></use>
                             </svg>
-                        </a><a class="footer__contacts-soc" href="<?= $GLOBALS['UF_TG']; ?>">
+                        </a><a class="footer__contacts-soc" href="<?= $GLOBALS['ION_TG']; ?>">
                             <svg>
                                 <use xlink:href="#teleg"></use>
                             </svg>
