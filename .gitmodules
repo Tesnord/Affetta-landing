@@ -4,3 +4,6 @@
 [submodule "bitrix/components/custom/form"]
 	path = bitrix/components/custom/form
 	url = https://github.com/amensum/bx-form-component.git
+[submodule "local/components/custom/form"]
+	path = local/components/custom/form
+	url = https://github.com/thebeterdays/bx-form-component.git

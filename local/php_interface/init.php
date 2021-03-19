@@ -6,7 +6,6 @@ include_once("amo/apiAMO.php");
 include_once("cookie.php");
 
 define("DEFAULT_TEMPLATE_PATH", '/local/templates/index');
-
 setupModules();
 $ION_PHONE = Ion\Settings::getSpaceField("UF_PHONE_NEW", "INFO");
 $ION_MAIL = Ion\Settings::getSpaceField("UF_MAIL", "INFO");
@@ -44,5 +43,6 @@ function my_OnBeforeEventSend($arFields, $arTemplate)
     }
     sendApiAmo($arFields['NAME'], $arFields['SUBJECT'], $arFields['PHONE'], $arFields['MESSAGE']['TEXT'], $arFields['PAGE'], $utm);
 }
+
 $eventManager = \Bitrix\Main\EventManager::getInstance();
 $eventManager->addEventHandler('main', 'OnBeforeEventSend', 'my_OnBeforeEventSend');

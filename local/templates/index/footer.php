@@ -101,16 +101,18 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
                     array(
                         'IBLOCK_ID' => '7',
                         'MAIL_EVENT' => 'FORM_SENDED',
+                        'RECAPTCHA_PUBLIC_KEY' => '6LcHuIUaAAAAAESKGCw6FAoFUjsEyQMux6sjoUtz',
+                        'RECAPTCHA_PRIVATE_KEY' => '6LcHuIUaAAAAAHzXkVRXIkTv0l3N-KDIVahbvBot',
                         'ACTIVE' => 'Y',
                         'TOKEN' => 'form001',
                         'FORM_NAME' => 'Заявка на консультацию по проекту (модальная)',
                         'PROPS' => array(
-                            'NAME', // type - string
-                            'SUBJECT',
-                            'PHONE', // type - string
-                            'MESSAGE', // type - html/text
+                            'TOKEN',
                             'DETAIL_URL',
-
+                            'SUBJECT',
+                            'NAME',
+                            'PHONE',
+                            'MESSAGE'
                         ),
                     )
                 );

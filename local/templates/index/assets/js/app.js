@@ -73,25 +73,25 @@ $(function () {
         e.preventDefault()
         var _form = $(this);
         var _data = _form.serialize();
-        $.ajax({
-            method: 'POST',
-            url: './mail.php',
-            data: _data,
-            beforeSend: function beforeSend() {
-                _form.find('.mbtn').text('Отправка...');
-            },
-            success: function success(d) {
-                _form.find('[type="text"]').val('');
-                _form.find('[type="tel"]').val('');
-                _form.find('[type="email"]').val('');
-                _form.find('textarea').val('');
-                _form.find('.mbtn').text('Отправить');
-                $('.modal').modal('hide');
-                setTimeout(function () {
-                    $('#modalThank').modal('show');
-                }, 200);
-            }
-        });
+        // $.ajax({
+        //     method: 'POST',
+        //     url: './mail.php',
+        //     data: _data,
+        //     beforeSend: function beforeSend() {
+        //         _form.find('.mbtn').text('Отправка...');
+        //     },
+        //     success: function success(d) {
+        //         _form.find('[type="text"]').val('');
+        //         _form.find('[type="tel"]').val('');
+        //         _form.find('[type="email"]').val('');
+        //         _form.find('textarea').val('');
+        //         _form.find('.mbtn').text('Отправить');
+        //         $('.modal').modal('hide');
+        //         setTimeout(function () {
+        //             $('#modalThank').modal('show');
+        //         }, 200);
+        //     }
+        // });
         ym(10670140, 'reachGoal', 'send_form')
     });
 
