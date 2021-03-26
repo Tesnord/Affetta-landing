@@ -101,6 +101,7 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
                     array(
                         'IBLOCK_ID' => '7',
                         'MAIL_EVENT' => 'FORM_SENDED',
+                        'RECAPTCHA_ENABLED' => 'Y',
                         'RECAPTCHA_PUBLIC_KEY' => '6LcHuIUaAAAAAESKGCw6FAoFUjsEyQMux6sjoUtz',
                         'RECAPTCHA_PRIVATE_KEY' => '6LcHuIUaAAAAAHzXkVRXIkTv0l3N-KDIVahbvBot',
                         'ACTIVE' => 'Y',
